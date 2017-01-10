@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_weight="0.43"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/title1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="抢单"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </LinearLayout>
+<View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#C0C0C0"
+
+/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="佣金区间:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/et_min"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/line"
+                android:inputType="numberDecimal"
+                android:textSize="16dp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:text="--"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_max"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/line"
+                android:inputType="numberDecimal"
+                android:textSize="16dp" />
+
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="#C0C0C0" />
+
+        <LinearLayout
+            android:id="@+id/layout_ismoney"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+            
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="任务类型:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            
+                            <TextView
+                android:id="@+id/tv_df"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="垫付"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+                        
+
+                  <ImageView
+                      android:id="@+id/ismoney"
+                      android:layout_width="50dp"
+                      android:layout_height="20dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:src="@drawable/switch_back" />
+                <TextView
+                android:id="@+id/tv_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浏览"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />  
+            
+            <!--
+
+            <RadioGroup
+                android:id="@+id/ismoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+                <RadioButton
+                    android:id="@+id/ismoney_y"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="垫付"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/ismoney_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="浏览"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </RadioGroup>
+            
+            --><!--
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="电脑任务:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/iscomputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/iscomputer_y"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="接"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/iscomputer_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="否"
+                    android:textColor="#000000" 
+                    android:textSize="16dp"/>
+            </RadioGroup>
+        --></LinearLayout>
+<View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#C0C0C0"
+android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+/>
+
+        <LinearLayout
+            android:id="@+id/layout_iscomputer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+            
+                <TextView
+                android:id="@+id/textView3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="电脑任务:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+                <TextView
+                android:id="@+id/tv_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+                        
+                  <ImageView
+                      android:id="@+id/iscomputer"
+                      android:layout_width="50dp"
+                      android:layout_height="20dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:src="@drawable/switch_back" />
+                <TextView
+                android:id="@+id/tv_sy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所有"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />     
+                        <!--
+
+            <RadioGroup
+                android:id="@+id/iscomputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+                <RadioButton
+                    android:id="@+id/iscomputer_y"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="接"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/iscomputer_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="否"
+                    android:textColor="#000000" 
+                    android:textSize="16dp"/>
+            </RadioGroup>
+            
+            --><!--
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="任务类型:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/ismoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/ismoney_y"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="垫付"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/ismoney_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="浏览"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </RadioGroup>
+        --></LinearLayout>
+<View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#C0C0C0"
+android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+/>
+
+        <LinearLayout
+            android:id="@+id/layout_isvibrator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="振动提醒:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+  <TextView
+                android:id="@+id/tv_zd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="振动"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/isvibrator"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/switch_back" />
+
+  <TextView
+                android:id="@+id/tv_xl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="响铃"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+           
+
+        </LinearLayout>
+<View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#C0C0C0"
+android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+/>
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/begin_button"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/login"
+                android:text="开始挂机" 
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/end_button"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login"
+                android:text="结束挂机" 
+                android:textSize="16dp"/>
+        </LinearLayout>
+<View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#C0C0C0"
+android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="当前已接:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="单"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+<View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#C0C0C0"
+android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+            
+                        <TextView
+                android:id="@+id/textView10"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="VIP  剩余:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/vip_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff0000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="天"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            
+            
+            <!--
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="软件提示:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一切正常"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        --></LinearLayout>
+<View  android:layout_height="1px" 
+           android:layout_width="match_parent"
+           android:background="#C0C0C0"
+android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+            
+                        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="软件提示:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一切正常"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <!--
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="VIP  剩余:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/vip_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff0000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="天"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        --></LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="#C0C0C0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="猜大小，赢助手天数"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff0000"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout
+            android:id="@+id/linearLayout13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="下注："
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/add_days"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/line"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <Button
+                android:id="@+id/big"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:text="大"
+                android:textSize="16dp" />
+
+
+            <Button
+                android:id="@+id/small"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:text="小"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+
+        --><LinearLayout
+            android:id="@+id/linearLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff0000"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

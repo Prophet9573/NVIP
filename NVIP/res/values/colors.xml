@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 程序主背景色 -->
+    <color name="app_main_background">#f2f2f2</color>
+    
+    
+    <color name="divider_line_color">#FFD0D0D0</color>
+    <color name="topbar_color">#2FA5DB</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="start_bg_color">#FFFFFFFF</color>
+    <color name="main_color">#FF1795DF</color>
+    <color name="main_color_normal">#D2D5D2</color>
+    <color name="sale_button_nomal">#FF1795DF</color>
+    <color name="sale_button_select">#FF1185DF</color>
+    <color name="edit_button_select">#ff7f00</color>
+    <color name="logo_desc_color">#FF1795DF</color>
+    <color name="tabhost_bg_color">#BBFFFFFF</color>
+    <color name="tabhost_item_text_color">#FF828282</color>
+    <color name="tabhost_item_text_select_color">#FF1795DF</color>
+    <color name="tab_line_color">#FFa9b7b7</color>
+    <color name="main_bg_color">#FFEEEEEE</color>
+    <color name="autoplay_bg">#FFFFFFFF</color>
+    <!-- 常用颜色定义 -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="item_normal_bg">#ffffffff</color>
+    <color name="item_select_bg">#ffeaeaea</color>
+    <color name="color_translaction">#00000000</color>
+    <color name="color_line">#EEE</color>
+    <color name="color_translaction_white">#AAFFFFFF</color>
+    <color name="color_shadow_translaction">#30000000</color>
+    <color name="buysale_bg_color">#FFFF5555</color>
+    <color name="sendcourier_bg_color">#FF7EB63D</color>
+    <color name="sendmessage_bg_color">#FFFF9801</color>
+    <color name="color_gray">#FFa9b7b7</color>
+    <color name="color_darkgray">#A1A1A1</color>
+    <color name="mine_item_title_color">#ff666666</color>
+    <color name="sale_title_color">#000000</color>
+    <color name="text_color">#000099</color>
+    <color name="text_btn_color">#FFF2DE</color>
+    <color name="text_btn_text_color">#B97B1F</color>
+    <color name="color_background">#fff</color>
+    <color name="color_blank">#ff000000</color>
+    <color name="color_mp">#C9C9C9</color>
+    <color name="checked_color">#99CC00</color>
+    <color name="orange_color">#FF8309</color>
+    <color name="yellowish">#F2800D</color>
+    <color name="red_color">#FF0000</color>
+    <color name="rosiness_color">#BB0000</color>
+    <color name="orange">#FFA500</color>
+    <color name="army_green">#33475f</color>
+    <color name="gray">#EEEEEE</color>
+
+    <!-- drop down list header font color -->
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+
+    
+    <!-- 文字颜色：亮白色 -->
+    <color name="text_color_light_white">#fcfcfc</color>
+    <!-- 文字颜色：醒目绿色 -->
+    <color name="text_color_striking">#ff1F8902</color>
+    <!-- 文字颜色：灰色 -->
+    <color name="text_color_gray">#808080</color>
+    <!-- 文字颜色：深灰色 -->
+    <color name="text_color_dark_gray">#ff666666</color>
+    <!-- 文字颜色：浅黑色 -->
+    <color name="text_color_light_black">#ff676767</color>
+    <!-- 文字颜色：蓝色 -->
+    <color name="text_color_blue">#1E90FF</color>
+    
+    <!-- ============================================ -->
+    <!-- "TitleBar"相关颜色定义 -->
+    <!-- ============================================ -->
+
+
+    <!-- TitleBar的背景色 -->
+    <color name="title_bar_bg_color">#3EADEE</color>
+    <!-- TitleBar中左侧返回按钮正常状态的颜色 -->
+    <drawable name="title_bar_button_backward_normal_color">#0000</drawable>
+    <!-- TitleBar中左侧返回按钮按下状态的颜色 -->
+    <drawable name="title_bar_button_backward_pressed_color">#40F64C99</drawable>
+
+    <!-- "设置"所在的表格容器的背景颜色 -->
+    <color name="setting_table_bg_color">#cbcbcb</color>
+    <!-- "设置"行正常状态下的颜色 -->
+    <drawable name="setting_row_normal_color">#ffffff</drawable>
+    <!-- "设置"行按下状态下的颜色 -->
+    <drawable name="setting_row_pressed_color">#f2f2f2</drawable>
+
+    <color name="main_primary">#ff333333</color>
+    <color name="main_secondary">#ff666666</color>
+    <color name="main_hint">#ff999999</color>
+    <color name="main_disable">#ffcccccc</color>
+    <color name="main_green">#ff50b400</color>
+    <color name="main_orange">#ffff6633</color>
+    <color name="main_white">#ffffffff</color>
+    <color name="main_light_orange">#ffff8400</color>
+    <color name="main_light_press_orange">#ffff6600</color>
+    <color name="main_line">#ffdcdcdc</color>
+    <color name="main_line_light_blue">#ff75D7FC</color>
+    <color name="main_link">#ff0088cc</color>
+    <color name="main_click">#ffeeeeee</color>
+    <color name="main_tips_bg_grey">#ffabaeb3</color>
+    <color name="main_null">#ffc0c5d0</color>
+    <color name="main_hint_seachbox">#ffbbbbbb</color>
+    <color name="main_white_transparent">#66ffffff</color>
+    <color name="main_filter_click">#ffc8c8c8</color>
+    <color name="main_alpha_green">#6450b400</color>
+    <color name="theme_color">#107CC0</color>
+    <color name="common_color_dark_green">#ff50B400</color>
+    <color name="common_color_gray">#ff7f8081</color>
+    <color name="common_color_light_gray">#ffE9EADA</color>
+    <color name="common_color_lighter_gray">#ffF5F4EF</color>
+
+</resources>

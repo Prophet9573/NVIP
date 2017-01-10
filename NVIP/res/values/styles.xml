@@ -1,0 +1,135 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- ============================================ -->
+    <!-- TitleBar样式定义 -->
+    <!-- ============================================ -->
+    <style name="Text">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Text.Title" parent="@style/Text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Text.Title_Button" parent="@style/Text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- ActionBar样式定义 -->
+    <!-- ============================================ -->
+
+    <style name="ActionBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+    <style name="ActionBarHomeLogo">
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginLeft">0px</item>
+    </style>
+
+    <style name="ActionBarItem">
+        <item name="android:layout_width">@dimen/actionbar_item_width</item>
+        <item name="android:layout_height">@dimen/actionbar_item_height</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginLeft">1px</item>
+    </style>
+
+    <style name="ActionBarHomeItem">
+        <item name="android:layout_width">@dimen/actionbar_item_width</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginLeft">1px</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="ActionBarProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:minWidth">36dip</item>
+        <item name="android:maxWidth">36dip</item>
+        <item name="android:minHeight">36dip</item>
+        <item name="android:maxHeight">36dip</item>
+    </style>
+
+    <style name="tv_list_primary_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/common_text_size_list</item>
+        <item name="android:textColor">@color/main_primary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="tv_hint_hint_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/common_text_size_hint</item>
+        <item name="android:textColor">@color/main_hint</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- ============================================ -->
+    <!-- 设置相关样式定义 -->
+    <!-- ============================================ -->
+
+
+    <!-- "设置"表格样式 -->
+    <style name="SettingTable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/setting_table_margin</item>
+        <item name="android:padding">@dimen/setting_table_padding</item>
+        <item name="android:background">@color/setting_table_bg_color</item>
+    </style>
+    <!-- "设置"单行样式 -->
+    <style name="SettingRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_row_height</item>
+        <item name="android:background">@drawable/setting_row_selector</item>
+        <item name="android:paddingLeft">@dimen/setting_row_padding_left</item>
+        <item name="android:paddingRight">@dimen/setting_row_padding_right</item>
+    </style>
+    <!-- "设置"顶行样式 -->
+    <style name="SettingRow.TopRow" parent="SettingRow">
+        <item name="android:layout_marginBottom">@dimen/setting_row_margin</item>
+    </style>
+    <!-- "设置"中间行样式 -->
+    <style name="SettingRow.MiddleRow" parent="SettingRow">
+        <item name="android:layout_marginBottom">@dimen/setting_row_margin</item>
+    </style>
+    <!-- "设置"底行样式 -->
+    <style name="SettingRow.BottomRow" parent="SettingRow"></style>
+    <!-- "设置"行中的标题样式 -->
+    <style name="SettingRowTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color_light_black</item>
+    </style>
+</resources>
